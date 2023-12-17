@@ -1,0 +1,46 @@
+.navbar{
+    display: inline;
+    position:sticky;
+}
+
+.navbar {
+    z-index: 14;
+  height: 90px;
+  display: flex;
+  background: #2a0fc2;
+  justify-content: space-between;
+  padding: 0.18rem calc((100vw - 1000px) / 2);
+
+}
+
+
+.navbarnav{
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1.2rem;
+    height: 100%;
+    &.active {
+      color: #000000;
+    }
+}
+.nav-item{
+    padding:15px;
+}
+
+.navbar{
+    animation: fadein 3s;
+    z-index: +1;
+    margin: 0 auto 0 auto;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
